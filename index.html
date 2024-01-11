@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img src="./images/logo-bookmark.svg" alt="">
+    <div class="mad" id="mad">
+      <div class="invisible">
+        <img src="./images/logo-bookmark copy.svg" alt=" " id="navlogo">
+        <img src="./images/icon-close.svg" alt="" id="close">
+      </div>
+
+      <ul>
+        <li class="links"><a href="">Features</a></li>
+        <li class="links"><a href="">Pricing</a></li>
+        <li class="links"><a href="">Contact</a></li>
+      </ul>
+      <button>Login</button>
+    </div>
+    <img src="./images/icon-hamburger.svg" alt="" id="menu">
+  </nav>
+  <header>
+    <div class="texter">
+      <div class="text">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <button class="bluebtn">Get it on Chrome</button><button>Get it on Firefox</button>
+      </div>
+    </div>
+    <div class="img">
+      <img src="./images/illustration-hero.svg" alt="">
+      <div class="bgcol"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="features">
+      <h2>Features</h2>
+      <p class="fp">Our aim is to make it quick and easy for you to access your favourite websites.
+        Your bookmarks sync between your devices so you can access them on the go.</p>
+
+      <ul class="blink">
+        <li id="simple">Simple Bookmarking</li>
+        <li id="speedy"> Speedy Searching</li>
+        <li id="easy">Easy Sharing</li>
+      </ul>
+
+      <div class="header2">
+        <div class="img2">
+          <img id="imageport" src="./images/illustration-features-tab-1.svg" alt="">
+          <div class="bgcol2"></div>
+        </div>
+        <div class="texter2">
+          <div class="text2">
+            <h1 id="titleport">Bookmark in one click</h1>
+            <p id="textport">Organize your bookmarks however you like. Our simple drag-and-drop interface
+              gives you complete control over how you manage your favourite sites.</p>
+            <button class="bluebtn">More Info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="extension">
+      <h2>Download the extension</h2>
+      <p class="ep">We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.</p>
+      <div class="container">
+        <div class="card Chrome">
+          <img src="./images/logo-chrome.svg" alt="">
+          <h5>Add to Chrome</h5>
+          <p>Minimum version 62</p>
+          <button>Add & Install Extension</button>
+        </div>
+        <div class="card firefox">
+          <img src="./images/logo-firefox.svg" alt="">
+          <h5>Add to Firefox</h5>
+          <p>Minimum version 62</p>
+          <button>Add & Install Extension</button>
+        </div>
+        <div class="card opera">
+          <img src="./images/logo-opera.svg" alt="">
+          <h5>Add to Opera</h5>
+          <p>Minimum version 46</p>
+          <button>Add & Install Extension</button>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <p>Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.</p>
+      <div class="que">
+        <div class="qi">
+          <h5>What is Bookmark? <img src="./images/icon-arrow.svg" class="dropbtn" alt=""></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+        </div>
+
+        <div class="qi">
+          <h5>How can I request a new browser?<img src="./images/icon-arrow.svg" class="dropbtn" alt=""></h5>
+          <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+        </div>
+
+        <div class="qi">
+          <h5>Is there a mobile app?<img src="./images/icon-arrow.svg" class="dropbtn" alt=""></h5>
+          <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+            sollicitudin ex et ultricies bibendum.</p>
+        </div>
+
+        <div class="qi">
+          <h5>What about other Chromium browsers?<img src="./images/icon-arrow.svg" class="dropbtn" alt=""></h5>
+          <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+            vitae neque eget nisl gravida pellentesque non ut velit.</p>
+        </div>
+      </div>
+      <button id="faqbtn">More Info</button>
+    </section>
+  </main>
+
+  <footer>
+    <section class="top">
+      <h5>35,000+ already joined</h5>
+      <h2>Stay up-to-date with what we’re doing</h2>
+      <form action="post">
+        <input type="email" class="email" required placeholder="example@gmail.com">
+        <button>Contact Us</button>
+      </form>
+    </section>
+    <div class="bot">
+      <ul>
+        <img src="./images/logo-bookmark copy.svg" alt="">
+        <li><a href="">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="media"><img src="./images/icon-twitter.svg" alt=""><img src="./images/icon-facebook.svg" alt="">
+      </div>
+    </div>
+  </footer>
+  <div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Desmond Izu</a>.
+    </p>
+  </div>
+
+  <script>
+    const simple = document.getElementById("simple");
+    const speedy = document.getElementById("speedy");
+    const easy = document.getElementById("easy");
+    const imageport = document.getElementById("imageport");
+    const titleport = document.getElementById("titleport");
+    const textport = document.getElementById("textport");
+    const dropbtn = document.getElementsByClassName("dropbtn");
+    const qi = document.getElementsByClassName("qi");
+    const menu = document.getElementById("menu");
+    const mclose = document.getElementById("close");
+    const mad = document.getElementById("mad");
+    const nav = document.getElementById("nav");
+    var numid = 0;
+
+    speedy.addEventListener("click", () => {
+      imageport.setAttribute("src", "./images/illustration-features-tab-2.svg");
+      titleport.innerHTML = "Intelligent search";
+      textport.innerHTML = "Our powerful search feature will help you find saved sites in no time at all.No need to trawl through all of your bookmarks.";
+    })
+
+    easy.addEventListener("click", () => {
+      imageport.setAttribute("src", "./images/illustration-features-tab-3.svg");
+      titleport.innerHTML = "Share your bookmarks";
+      textport.innerHTML = "Our powerful search feature will help you find saved sites in no time at all.No need to trawl through all of your bookmarks.";
+    })
+
+    simple.addEventListener("click", () => {
+      imageport.setAttribute("src", "./images/illustration-features-tab-1.svg");
+      titleport.innerHTML = "Bookmark in one click";
+      textport.innerHTML = "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.";
+    })
+
+    for (let s = 0; s < dropbtn.length; s++) {
+      const element = dropbtn[s].addEventListener("click", () => {
+        switch (numid) {
+          case numid = 0:
+            qi[s].style.height = "fit-content";
+            numid = 1;
+            break;
+
+          case numid = 1:
+            qi[s].style.height = "20px";
+            numid = 0;
+            break;
+        }
+      });
+    }
+    menu.addEventListener("click", () => {
+      mad.style.display = "flex";
+    })
+    mclose.addEventListener("click", () => {
+      mad.style.display = "none";
+    })
+  </script>
+
+</body>
+
+</html>
